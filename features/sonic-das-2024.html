@@ -1,3 +1,481 @@
+<p class="intro-italic">Sonic (@sonicthescrew) is a staff writer at This Week in Tetris, the main editor of the DAS Statistics Project, and a math graduate student who likes playing with numbers and computers.
+</p>
+
+<p>It's no secret that 2024 has been a huge year for NES Tetris. Over the course of the year, TWiT has covered many open playstyle tournaments, featuring rollers, tappers and DAS players, but one huge change in the landscape has fallen outside our coverage -- that of DAS-only matches. The DAS playstyle has seen a huge revival this year, with multiple new DAS-only tournaments popping up after the announcement of the Jonas Neubauer Cup at Portland in September. With this we saw the rise of many players who haven't had the spotlight before and are now garnering accolades for their abilities in the DAS playstyle. We began the year with five DAS 1.3 players (Tristop, Tugi, Mark Migas, Nenu, NGC Man), and ended the year doubling that count (adding PixelAndy, Matt Martin, Giovanni, Valor and Meme, who got the first ever 19 start 1.3!), along with many other players, old and new, who've PBed in the high 1.2 range. Virtually every single DAS world record has been broken this year: 18 start, 19 start and 29 start scores, highest level reached, 29 lines, back-to-back maxout records, and all kinds of competitive and qualifier records.</p>
+
+<p>After seeing PixelAndy play Svavar at Jonas Cup, a question popped into my head: how much better have players really gotten? Andy, with his three DAS Masters wins, is the best of the current generation; Svavar belongs to Jonas's generation of players, who didn't know about anything outside DAS and virtually played in a competitive DAS-only environment for years. We could look at their head-to-head record at Jonas Cup, where the two generations collided, but there is much more that we can do.</p>
+
+<p><a href="https://docs.google.com/spreadsheets/d/1i-mH5LTSpiSkO4JGtbl6J8JN-A3phy7aA6zt85WcBqk/edit?usp=sharing">The DAS Statistics Project</a> is an attempt to both answer this question, and catalogue the current DAS competitive landscape. As a start, we've included all DAS-only tournaments for Elo in 2024, and hope to backfill matches from previous years as we go. The project will continue to grow in the new year, but the current spreadsheet functions much like the CTM Masters Statistics sheet: there are box score generators, player profiles, leaderboards and a spreadsheet of numbers... and more features to come in the new year (hopefully!). A special thank you to Andrew Meep for helping a ton with entering matches, Lucy and Jasmine for letting me bounce ideas off the group chat, Marfram and Scout for pioneering statistical analysis in NES Tetris, the many players and community members who've provided valuable feedback, and to the wider Tetris community who's welcomed me with open arms in the past year. All calculations in this article were done using the data in this spreadsheet -- feel free to DM/ping me with feedback on it as we continue to grow!</p>
+
+<p>There are four main statistics we're going to look at in this article, each representing different aspects of the game: scoring (fair median score), consistency (19 transition rate), 18 efficiency (median 19 transition score/M19T), 19 efficiency (fair median post-transition score, counting all points scored after 18). A choice of an arbitrary cutoff of 10 games was made by myself in order to exclude players with extremely small sample sizes. Sadly this excludes <b>STORM957</b>, an up-and-coming player who burst onto the scene this year (and last I checked, plays on a wireless controller + emulator! I cannot imagine how many frames of lag that is), who only had 9 games on record and would otherwise have ranked top 10 in each category.</p>
+
+<p>So, without further ado, here are the rankings:</p>
+
+<h2>Fair Median Score</h2>
+
+<p>Ah, good old FMS. If you don't know what that is, here's a <a href="https://youtu.be/qnhShaOdtFw?si=JagE5mvMrWjulJpG&t=1701">video explanation</a> by aGameScout, who designed this metric with Marfram in the godfather of NES Tetris stats projects- that for Classic Tetris Monthly (CTM). The <b>Fair Median Score</b> measures the median among all Natural Topout (ie non-intentional, either by completely stopping or aggressively continuing to play) games and all Intentional/Aggressive Topouts that are above the raw median. This is an approximate reflection of what a player can be expected to score over half (50%) of the time.</p>
+
+<div class="ranking-flex-container">
+  <div class="ranking-flex-item">
+    <img class="player-thumbnail" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiAW9Kvw1Td8Kq7AmZ6KmzKguAdPu2UQV0i2yaH8mwgaCX6JDUsMm4W27S84Lp3EKOZ3FmcE6-6CgZ0y4xi21UpHm1G4h2Lk0FOqh5ngm5a6gN6iE3wHopLAuH9pyFGuRL7wz8ee_QyiPhDBm6LTm67W0aQ8pPRCw9M5Y_hU5tSl8qMu9-3lkNYbOio8ng/s1999/image12.jpg"><br>
+    <span class="minor-heading player-name">1 FRACTAL 🇺🇸</span><br>
+    FMS: 955,330
+  </div>
+  <div class="ranking-flex-item">
+    <img class="player-thumbnail" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjFQiEEMf5iEmgWbNgJjzEcctLsY2CjOvRF6kt2lb_OT0JjZI1yTe1VcqSCjso3QXEa6pSj5Kbuaa7W-wEW43hITCr3tTiiGgpfxzlCXIyNWoWvQ5_0g6LLlRryC_xQ0yEg2F-5FA0YODlRdxGAqpJ7Lp64mDWy83wOQ85vpp6yrcdlo8RyDNmkZ-YYyow/s1999/image7.jpg"><br>
+    <span class="minor-heading player-name">2 PIXELANDY 🇺🇸</span><br>
+    FMS: 946,480
+  </div>
+  <div class="ranking-flex-item">
+    <img class="player-thumbnail" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjrmpnPCVqLS5lk4BRxfTbaVey0AvHbI85fItrzNZN5C7TNo5nl3YUmdAMtfRW7M9eVT45AJkK_s-hhnefcPVKM6liP2lwFdwaHjklCxjbkn3S1HP_bGXvBh4uQjMZyE3WyPNC176wQDxjwgXn1AbzxK8z_onatIGWMAtvj1Q-A6v3Ys0Z5V-OtaVJh2QA/s282/image8.png"><br>
+    <span class="minor-heading player-name">3 TOMMYNTG 🇺🇸</span><br>
+    FMS: 893,960
+  </div>
+  <div class="ranking-flex-item">
+    <img class="player-thumbnail" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjiES4pz9Gbl4LBvsFhf86ldCZbxvDjLUCm05oWB4CWWwSCIDEY6BEVSI40F-UlJQGUkBmYhH50QNjsAQImJFOzQiKlcARZwgGPPX1KphebPZq1cVkqMtdI3Wiksdo58jjeEhcEMVuF2zRoVmOzhRSAgfWQoJeKIzCaa9Q5DxBy_HnMXXwB8l80Q6tW4MQ/s1999/image10.jpg"><br>
+    <span class="minor-heading player-name">4 GIOVANNI 🇮🇹</span><br>
+    FMS: 864,914
+  </div>
+  <div class="ranking-flex-item">
+    <img class="player-thumbnail" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh4bIoD2Lztn9LSAFKzRXkU1lX7IKHPLYSmCNlOk9EWX_tmbF_POCLoN0rQX-WzA-qPE4hVzkk6EU8keTs8fNDo6vGuCxe2BaQ69eh-a8cJDkWvH4Bs35SUGTJebF72wqXvTWytAuk9a2wh07lFptlqhA3x7KTagOc1O6zOXu9sgqiWofudQFWmcWbAVGo/s320/image2.jpg"><br>
+    <span class="minor-heading player-name">5 SHARKY 🇺🇲</span><br>
+    FMS: 848,541
+  </div>
+  <div class="ranking-flex-item">
+    <img class="player-thumbnail" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiS6SmdPna8pPJleBkDLnVu_DggEXhvKbuAX9RYFfAzcrZtL1EDvtlHoX8kKNKj8oTRWsm8LRhWAyNOTuyg9kbbMJWAVYXmUfFsKZrHHKAZJIUYTv0cnDvgpy9LG4m-WUGJMZvyoG3pUMOPrFYhgfs5bN4Ttu90w9q4haay-VxYUVdOFXN8aRkS2mhXj6Q/s320/image6.png"><br>
+    <span class="minor-heading player-name">6 NENU 🇮🇩</span><br>
+    FMS: 846,600
+  </div>
+  <div class="ranking-flex-item">
+    <img class="player-thumbnail" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjUZVyp4PiV3m6964b8GMEsNAB3LRCA4kQOuCBasQtITbpNvKxJEBQxAcDn89CQQSLYBcLt8VVcPAeKuS7E-IDBaoTzR_nyuY1mpaxSEpgvyGhIIN6ZfOuQyVfk-Y3HTSbvOchzIcHIAGQ9G-r9fynNyO63nv0v-_3llGzAyeE5cxaLiCsOjNRNZskczgM/s1999/image17.jpg"><br>
+    <span class="minor-heading player-name">7 DOG 🇺🇲</span><br>
+    FMS: 840,460
+  </div>
+  <div class="ranking-flex-item">
+    <img class="player-thumbnail" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiQVXadM-nmDp_jB79LivpnsgrRxzsdZRW0mq5cwNf2MeSbr3wSRPZu7DYmKUNphU1Ya7WIyb873tXpUXr7v7etSiRIgOnYpyWj0HNOWAIlFPlDiL5Ihex3FsNZ22_7IZPPj7E6ONcINyHFMOXrbNe-Q1w1rSHLAGcoWwpIuuI2oGPzTkXSctQukU-wQrg/s492/image20.png"><br>
+    <span class="minor-heading player-name">8 LIOLIO 🇧🇬</span><br>
+    FMS: 818,026
+  </div>
+  <div class="ranking-flex-item">
+    <img class="player-thumbnail" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgyuS-vUjv6xLRp6uwcg-wIiWXH105FWHOZNZ2QCleCyBHzeh2DwZUs4mk7EUQOSqy_gAO0E5sW9X7WISGHLwzQ4auswxmuL2yggPNjTrlx7LV8wU7m0SrrRXLaegagz-bClMiQYQwA_C7wiPCdWAb2iSBg-dJg3hYHslmsN6xvjahtTEs0u77fpDRDVbs/s1919/image15.jpg"><br>
+    <span class="minor-heading player-name">9 BENDY1 🇺🇲</span><br>
+    FMS: 804,141
+  </div>
+  <div class="ranking-flex-item">
+    <img class="player-thumbnail" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhOAFQlQsjUhUlytQberXkLnme03j93dAV6DE1ucVytIc-h_ZFV5XfGTlb2LZQ4ywo8S-6MuZkKFt_JUSUkeM8JTwQEqf8u0oBGNrh4bIx6IU6dyRaLtUBBVGmcINpZCsERcSULFtZZa8i2GNwalhYaOquzEZX_OikhuLof4MX97SEhIjqtNgdPUcneTTI/s287/image5.png"><br>
+    <span class="minor-heading player-name">10 POOPYOLDHAG 🇳🇿</span><br>
+    FMS: 792,600
+  </div>
+</div>
+<div class="note">
+  <a href="#photo-credits">
+    Photo Credits
+  </a>
+</div>
+
+<p>And here's your top 10 in Fair Median Score! Since competitive Tetris is a high score attack, this is probably the closest thing to predicting how players will do in a certain head to head matchup.
+  It's no surprise that Fractal and Andy are at the top, but names such as TommyNTG and Poopy might surprise a few people. There's much more to look at though, because although having a high scoring potential is something to be celebrated, how wide those scores are distributed is another story, which brings us to our other efficiency and consistency measurements to come.
+  </p>
+
+
+<h2>Level 18 Efficiency</h2>
+
+<div class="ranking-flex-container">
+  <div class="ranking-flex-item">
+    <img class="player-thumbnail" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi1vXMXid76Wi-KawMw0cz_KrZoF8CToFh9bHRfgXt3bOwXlfNUqGS2mS0FxzCqzY6CkWnC-djvj6p_0vAyjNBAlKqp27DiDfAwp1zKBt6XcVIoQ-EU4ZnhT6pOu9s4Y-TZYH4VPGw9IQhWpwO8pBqwm8NmpS4KS7nxMRuLxHAMYk_TlIP6LBiYtOgGKA8/s1999/image4.jpg"><br>
+    <span class="minor-heading player-name">1 TRISTOP 🇺🇸</span><br>
+    M19T: 563,620
+  </div>
+  <div class="ranking-flex-item">
+    <img class="player-thumbnail" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiAW9Kvw1Td8Kq7AmZ6KmzKguAdPu2UQV0i2yaH8mwgaCX6JDUsMm4W27S84Lp3EKOZ3FmcE6-6CgZ0y4xi21UpHm1G4h2Lk0FOqh5ngm5a6gN6iE3wHopLAuH9pyFGuRL7wz8ee_QyiPhDBm6LTm67W0aQ8pPRCw9M5Y_hU5tSl8qMu9-3lkNYbOio8ng/s1999/image12.jpg"><br>
+    <span class="minor-heading player-name">2 FRACTAL 🇺🇸</span><br>
+    M19T: 562,460
+  </div>
+  <div class="ranking-flex-item">
+    <img class="player-thumbnail" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjUZVyp4PiV3m6964b8GMEsNAB3LRCA4kQOuCBasQtITbpNvKxJEBQxAcDn89CQQSLYBcLt8VVcPAeKuS7E-IDBaoTzR_nyuY1mpaxSEpgvyGhIIN6ZfOuQyVfk-Y3HTSbvOchzIcHIAGQ9G-r9fynNyO63nv0v-_3llGzAyeE5cxaLiCsOjNRNZskczgM/s1999/image17.jpg"><br>
+    <span class="minor-heading player-name">3 DOG 🇺🇸</span><br>
+    M19T: 556,960
+  </div>
+  <div class="ranking-flex-item">
+    <img class="player-thumbnail" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEixTYRwlX7ynvbGtumu-kUlfEYxZbDhCLTSGPl6emBkbdEktLnDa8FWu2wAXpiYm9VykaZJnRyK-jejUPwbDuuhYn8pQ83DYyqFcNiw03AvI_dKZh6GWYMDlI0p3Oir8LBG34Y07MjObbNocDuL-s1uRkmsL4BaA0BNE-oWk4lcEmfySq3zgpGKgEvNfNs/s1999/image1.jpg"><br>
+    <span class="minor-heading player-name">4 SIDNEV 🇳🇱</span><br>
+    M19T: 550,301
+  </div>
+  <div class="ranking-flex-item">
+    <img class="player-thumbnail" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjFQiEEMf5iEmgWbNgJjzEcctLsY2CjOvRF6kt2lb_OT0JjZI1yTe1VcqSCjso3QXEa6pSj5Kbuaa7W-wEW43hITCr3tTiiGgpfxzlCXIyNWoWvQ5_0g6LLlRryC_xQ0yEg2F-5FA0YODlRdxGAqpJ7Lp64mDWy83wOQ85vpp6yrcdlo8RyDNmkZ-YYyow/s1999/image7.jpg"><br>
+    <span class="minor-heading player-name">5 PIXELANDY 🇺🇸</span><br>
+    M19T: 545,177
+  </div>
+  <div class="ranking-flex-item">
+    <img class="player-thumbnail" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjiES4pz9Gbl4LBvsFhf86ldCZbxvDjLUCm05oWB4CWWwSCIDEY6BEVSI40F-UlJQGUkBmYhH50QNjsAQImJFOzQiKlcARZwgGPPX1KphebPZq1cVkqMtdI3Wiksdo58jjeEhcEMVuF2zRoVmOzhRSAgfWQoJeKIzCaa9Q5DxBy_HnMXXwB8l80Q6tW4MQ/s1999/image10.jpg"><br>
+    <span class="minor-heading player-name">6 GIOVANNI 🇮🇹</span><br>
+    M19T: 543,820
+  </div>
+  <div class="ranking-flex-item">
+    <img class="player-thumbnail" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj1LsD7rq1gncZIY0Kacp60RKVD5UJYjgLn_6j3LZggGaEfHhHYjd0fNaLDCnAFvUvYMsgQ2jU3aWOtSMXt-ubwd5bG32ng4OwRkZCG-qxS8JG0DEzpZWEy7GYIApR2YcLmz_R0Uo8QJYtK8Ndl7VXzRUFZBhO8narAf3tn1NSpW7SSTPHm8JwsFYnJycc/s1009/image16.png"><br>
+    <span class="minor-heading player-name">7 IANKEITH 🇺🇸</span><br>
+    M19T: 542,512
+  </div>
+  <div class="ranking-flex-item">
+    <img class="player-thumbnail" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjFfrLiXJL_Tos26QwDS_X-1_p47L3bdbvu6yA6DJZp4JZqfusodKDlLDkADIfn-3yOGgrdG42GiBPEgMH10Rus8PdZrV_i6A0_j5e2abaIfUnCILhjazAKBrUuEJDqTJPQZuXR20A8xrrsytNvyIcQkNIlZfYBqevyHO8HCwbhdQyPp7TjrqcXMbjzWFM/s1999/image18.jpg"><br>
+    <span class="minor-heading player-name">8 BLUE SCUTI 🇺🇸</span><br>
+    M19T: 542,320
+  </div>
+  <div class="ranking-flex-item">
+    <img class="player-thumbnail" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg_4Yi4SRulUJR39K0oGjn1E-QMW1I5S3h6KkR4v_n2Gls8pI73L-LzelRCYFdvaavgdvLrJrYdA8FTszJCoMD0QvAvilatf23sVPxEbLqcElmXK6JPOqixS6dJSpxVvIoN0tlRYV9KVjVIKcTbQRon6-LaFrMxwPz5eISbLwxrxQlIJFHeaxGS2kK0uKc/s549/image9.png"><br>
+    <span class="minor-heading player-name">9 ELIAS 🇪🇨</span><br>
+    M19T: 540,350
+  </div>
+  <div class="ranking-flex-item">
+    <img class="player-thumbnail" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgyuS-vUjv6xLRp6uwcg-wIiWXH105FWHOZNZ2QCleCyBHzeh2DwZUs4mk7EUQOSqy_gAO0E5sW9X7WISGHLwzQ4auswxmuL2yggPNjTrlx7LV8wU7m0SrrRXLaegagz-bClMiQYQwA_C7wiPCdWAb2iSBg-dJg3hYHslmsN6xvjahtTEs0u77fpDRDVbs/s1919/image15.jpg"><br>
+    <span class="minor-heading player-name">10 BENDY1 🇺🇸</span><br>
+    M19T: 539,542
+  </div>
+</div>
+<div class="note">
+  <a href="#photo-credits">
+    Photo Credits
+  </a>
+</div>
+
+<p>Compared to open playstyle tournaments, where games are primarily split between the pre-killscreen (Level 29) and post-killscreen stages, the bread and butter of a DAS game is on level 18, where half of the game's points are scored. Whereas a roller might get away with mid paces on 18 and still catch up in score on the killscreen, a DAS player doesn't have that luxury (even if your name is PixelAndy). So who has the best efficiency on 18 in competition? The number to look at here is the <b>median 19 transition score</b>, which is fairly self-explanatory in name.</p>
+
+<p>Maybe surprisingly to some, in first place is Tristop, who is probably better known for his rolling accomplishments in this period. He did make the finals of both DCL and August's DAS Masters though, and he was also the first player to get a DAS 1.3, so by no means is he a slouch. The Top 10 is then filled with other players you might expect- Fractal, Dog, Gio, Andy, Bendy, Elias- as well as a couple of surprising names, like Sidnev and IanKeith. It's incredibly close at the top though, as you might be able to see by some of these scores differing by a couple thousand points: 43 players have a median 19 transition score over 500k, so lots of players are pretty good on level 18- the natural question is, then, how consistent are they at doing this?</p>
+
+<h2>Consistency</h2>
+
+<div class="ranking-flex-container">
+  <div class="ranking-flex-item">
+    <img class="player-thumbnail" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj0dIbvMfDM0cQQaqAQMSjAsJPzx7NmrgI69dumsxBBIh6196epNFLOUv3KH3vwybi3R9P3tl9sYLpZcQmOPCmSv4rfwI1aE8bNd3DOm7pTMY0r3US1J2hHLpV_9bZuwdG1djGDtNGjELQrqaI4E2BXMUG6RjKLqkBeMRmEceyBy0tAwdGUhL9dUZnXG8A/s426/image21.png"><br>
+    <span class="minor-heading player-name">1 JDH 🇺🇸</span><br>
+    F19%: 100%
+  </div>
+  <div class="ranking-flex-item">
+    <img class="player-thumbnail" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjrmpnPCVqLS5lk4BRxfTbaVey0AvHbI85fItrzNZN5C7TNo5nl3YUmdAMtfRW7M9eVT45AJkK_s-hhnefcPVKM6liP2lwFdwaHjklCxjbkn3S1HP_bGXvBh4uQjMZyE3WyPNC176wQDxjwgXn1AbzxK8z_onatIGWMAtvj1Q-A6v3Ys0Z5V-OtaVJh2QA/s282/image8.png"><br>
+    <span class="minor-heading player-name">2 TOMMYNTG 🇺🇸</span><br>
+    F19%: 97.96%
+  </div>
+  <div class="ranking-flex-item">
+    <img class="player-thumbnail" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjFQiEEMf5iEmgWbNgJjzEcctLsY2CjOvRF6kt2lb_OT0JjZI1yTe1VcqSCjso3QXEa6pSj5Kbuaa7W-wEW43hITCr3tTiiGgpfxzlCXIyNWoWvQ5_0g6LLlRryC_xQ0yEg2F-5FA0YODlRdxGAqpJ7Lp64mDWy83wOQ85vpp6yrcdlo8RyDNmkZ-YYyow/s1999/image7.jpg"><br>
+    <span class="minor-heading player-name">3 PIXELANDY 🇺🇸</span><br>
+    F19%: 96.43%
+  </div>
+  <div class="ranking-flex-item">
+    <img class="player-thumbnail" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh4bIoD2Lztn9LSAFKzRXkU1lX7IKHPLYSmCNlOk9EWX_tmbF_POCLoN0rQX-WzA-qPE4hVzkk6EU8keTs8fNDo6vGuCxe2BaQ69eh-a8cJDkWvH4Bs35SUGTJebF72wqXvTWytAuk9a2wh07lFptlqhA3x7KTagOc1O6zOXu9sgqiWofudQFWmcWbAVGo/s320/image2.jpg"><br>
+    <span class="minor-heading player-name">4 SHARKY 🇺🇸</span><br>
+    F19%: 96.05%
+  </div>
+  <div class="ranking-flex-item">
+    <img class="player-thumbnail" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhsOtN-g4yE1zpOaMbhY12mpOUhYjp3TPhSPuKWh7S2iMVzRziRfA5CIGSBV78RaayM5M3nyNC7IC_CJdAY4UgSsJos9ScUz2fkMZmbT5ka9L0hNGJIZmnt6aVQopTdQHvGDnbuqHibjLkTay8mJgEbyI0tSnEFni_u0UJhSsY1CR7W4J-QQ-Frk05STWc/s1999/image11.jpg"><br>
+    <span class="minor-heading player-name">5 ROBIN 🇳🇱</span><br>
+    F19%: 95.65%
+  </div>
+  <div class="ranking-flex-item">
+    <img class="player-thumbnail" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiS6SmdPna8pPJleBkDLnVu_DggEXhvKbuAX9RYFfAzcrZtL1EDvtlHoX8kKNKj8oTRWsm8LRhWAyNOTuyg9kbbMJWAVYXmUfFsKZrHHKAZJIUYTv0cnDvgpy9LG4m-WUGJMZvyoG3pUMOPrFYhgfs5bN4Ttu90w9q4haay-VxYUVdOFXN8aRkS2mhXj6Q/s320/image6.png"><br>
+    <span class="minor-heading player-name">6 NENU 🇮🇩</span><br>
+    F19%: 93.10%
+  </div>
+  <div class="ranking-flex-item">
+    <img class="player-thumbnail" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhpwz_FmbZUdv84UeIoEmXweKpuZor3dM2zE6-wg-pLweW7wYXrHpEX9F6fCqSkfBm8hgqVH7Hde9lmDkPfk7vYzJKlp2zviAwvTtT6JB9_pWJoM86D242olP4ua_y6Icq-RJF-cdy34pHInndQSvcynVsqUh43E16MtQU7sD78uk0YnFOZtaZhhHEONLQ/s1999/image22.jpg"><br>
+    <span class="minor-heading player-name">7 DAVIDMJ 🇺🇸</span><br>
+    F19%: 92.31%
+  </div>
+  <div class="ranking-flex-item">
+    <img class="player-thumbnail" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjUZVyp4PiV3m6964b8GMEsNAB3LRCA4kQOuCBasQtITbpNvKxJEBQxAcDn89CQQSLYBcLt8VVcPAeKuS7E-IDBaoTzR_nyuY1mpaxSEpgvyGhIIN6ZfOuQyVfk-Y3HTSbvOchzIcHIAGQ9G-r9fynNyO63nv0v-_3llGzAyeE5cxaLiCsOjNRNZskczgM/s1999/image17.jpg"><br>
+    <span class="minor-heading player-name">8 DOG 🇺🇸</span><br>
+    F19%: 91.76%
+  </div>
+  <div class="ranking-flex-item">
+    <img class="player-thumbnail" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhDbKIp_ntG0_J7MFyHNwiJGsmGESgdbPYddi0jzg4bWDhmgN_XuX_DZt0tkmfZYeivOpAO27B6S6mRQp_y9SVzDSWisFzmyaS53_Q_gn2E4u1BHel5YAaqnI_CJ3mLKOgqIB2K7WS06BR8cDH7leNYTOngAT_oWHkY9KP3MbwEIuXb8O-6-ToFOLum5UY/s320/image3.png"><br>
+    <span class="minor-heading player-name">9 PEEKAYRIC 🇺🇸</span><br>
+    F19%: 91.67%
+  </div>
+  <div class="ranking-flex-item">
+    <img class="player-thumbnail" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgyuS-vUjv6xLRp6uwcg-wIiWXH105FWHOZNZ2QCleCyBHzeh2DwZUs4mk7EUQOSqy_gAO0E5sW9X7WISGHLwzQ4auswxmuL2yggPNjTrlx7LV8wU7m0SrrRXLaegagz-bClMiQYQwA_C7wiPCdWAb2iSBg-dJg3hYHslmsN6xvjahtTEs0u77fpDRDVbs/s1919/image15.jpg"><br>
+    <span class="minor-heading player-name">10 BENDY1 🇺🇸</span><br>
+    F19%: 88.89%
+  </div>
+</div>
+<div class="note">
+  <a href="#photo-credits">
+    Photo Credits
+  </a>
+</div>
+
+<p>Seeing that, another useful statistic to look at is the <b>fair 19 transition rate</b>. This looks at the percentage when players have reached the level 19 transition at 130 lines, excluding intentional early topouts. Early topouts are far more common than in open tournaments, and as a whole a F19% above 85% is already pretty good.</p>
+
+<p>First place on this leaderboard went to JDH (also known as James/JD), who has never early topped in his 11 games on record. That's admittedly a pretty <a href="https://www.youtube.com/watch?v=dw9qqvm-LT8&ab_channel=TedBerg">small sample size</a> though, so let's also look at the remaining players on that list. There are players like Sharky and Robin who aren't in the top 10 in FMS, but have very good consistency in getting to level 18. Even Tommy, who came 3rd in overall score and is ranked 2nd here, doesn't appear on the 18 efficiency top 10. Only Andy (3rd in transition rate, 5th in transition score), Dog (8th/3rd), and Bendy (10th in both) appear on both lists, and it's no surprise that they've all enjoyed competitive success in the last year as they combine an efficient 18 with controlled aggression so that they do not top out early.</p>
+
+<h2>Level 19 Efficiency</h2>
+
+<p>And at last, the post-transition: DAS control and controlled aggression is key here, as loaded DAS is notoriously difficult to control on level 19 speeds, which occupies half the game in DAS matches. Many players, especially rolling mains, describe playing DAS 19 like roll 29, and 19 efficiency really is the deciding factor in a lot of matches -- because the top 10 of post-transition scores is much more similar to the Fair Median Score rankings.</p>
+
+<p>In order to measure efficiency and consistency on 19, I've chosen to use the fair median mechanism on players' post-transition scores to get their <b>Fair Median Post-Transition Score</b>. This is a new statistic that we haven't looked at before, but was necessary since players often build for multiple tetrises towards the 29 transition and end up topping out pre-29, so the traditional metric for measuring 19 efficiency, a player's median 29 transition score, cannot reflect these games accurately.</p>
+
+<div class="ranking-flex-container">
+  <div class="ranking-flex-item">
+    <img class="player-thumbnail" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjFQiEEMf5iEmgWbNgJjzEcctLsY2CjOvRF6kt2lb_OT0JjZI1yTe1VcqSCjso3QXEa6pSj5Kbuaa7W-wEW43hITCr3tTiiGgpfxzlCXIyNWoWvQ5_0g6LLlRryC_xQ0yEg2F-5FA0YODlRdxGAqpJ7Lp64mDWy83wOQ85vpp6yrcdlo8RyDNmkZ-YYyow/s1999/image7.jpg"><br>
+    <span class="minor-heading player-name">1 PIXELANDY 🇺🇸</span><br>
+    FM Post: 432,790
+  </div>
+  <div class="ranking-flex-item">
+    <img class="player-thumbnail" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiAW9Kvw1Td8Kq7AmZ6KmzKguAdPu2UQV0i2yaH8mwgaCX6JDUsMm4W27S84Lp3EKOZ3FmcE6-6CgZ0y4xi21UpHm1G4h2Lk0FOqh5ngm5a6gN6iE3wHopLAuH9pyFGuRL7wz8ee_QyiPhDBm6LTm67W0aQ8pPRCw9M5Y_hU5tSl8qMu9-3lkNYbOio8ng/s1999/image12.jpg"><br>
+    <span class="minor-heading player-name">2 FRACTAL 🇺🇸</span><br>
+    FM Post: 430,250
+  </div>
+  <div class="ranking-flex-item">
+    <img class="player-thumbnail" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjiES4pz9Gbl4LBvsFhf86ldCZbxvDjLUCm05oWB4CWWwSCIDEY6BEVSI40F-UlJQGUkBmYhH50QNjsAQImJFOzQiKlcARZwgGPPX1KphebPZq1cVkqMtdI3Wiksdo58jjeEhcEMVuF2zRoVmOzhRSAgfWQoJeKIzCaa9Q5DxBy_HnMXXwB8l80Q6tW4MQ/s1999/image10.jpg"><br>
+    <span class="minor-heading player-name">3 GIOVANNI 🇮🇹</span><br>
+    FM Post: 391,500
+  </div>
+  <div class="ranking-flex-item">
+    <img class="player-thumbnail" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjrmpnPCVqLS5lk4BRxfTbaVey0AvHbI85fItrzNZN5C7TNo5nl3YUmdAMtfRW7M9eVT45AJkK_s-hhnefcPVKM6liP2lwFdwaHjklCxjbkn3S1HP_bGXvBh4uQjMZyE3WyPNC176wQDxjwgXn1AbzxK8z_onatIGWMAtvj1Q-A6v3Ys0Z5V-OtaVJh2QA/s282/image8.png"><br>
+    <span class="minor-heading player-name">4 TOMMYNTG 🇺🇸</span><br>
+    FM Post: 389,050
+  </div>
+  <div class="ranking-flex-item">
+    <img class="player-thumbnail" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh4bIoD2Lztn9LSAFKzRXkU1lX7IKHPLYSmCNlOk9EWX_tmbF_POCLoN0rQX-WzA-qPE4hVzkk6EU8keTs8fNDo6vGuCxe2BaQ69eh-a8cJDkWvH4Bs35SUGTJebF72wqXvTWytAuk9a2wh07lFptlqhA3x7KTagOc1O6zOXu9sgqiWofudQFWmcWbAVGo/s320/image2.jpg"><br>
+    <span class="minor-heading player-name">5 SHARKY 🇺🇸</span><br>
+    FM Post: 359,191
+  </div>
+  <div class="ranking-flex-item">
+    <img class="player-thumbnail" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiQVXadM-nmDp_jB79LivpnsgrRxzsdZRW0mq5cwNf2MeSbr3wSRPZu7DYmKUNphU1Ya7WIyb873tXpUXr7v7etSiRIgOnYpyWj0HNOWAIlFPlDiL5Ihex3FsNZ22_7IZPPj7E6ONcINyHFMOXrbNe-Q1w1rSHLAGcoWwpIuuI2oGPzTkXSctQukU-wQrg/s492/image20.png"><br>
+    <span class="minor-heading player-name">6 LIOLIO 🇭🇺</span><br>
+    FM Post: 358,150
+  </div>
+  <div class="ranking-flex-item">
+    <img class="player-thumbnail" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiDwAAExLttNg6s5-lXBbm2dK54N2mLx3RbaVifmcrjsX_ieaw7tOT7i0FJXc5EPdb7wPpj1TLKpYKj-MOM7BEjSxpNcNbH0i70VVRwD3anAKdWP0WOicVANuSYI3w5Jq5CTtnEhRXglQQUqBymzsW2B0jYKvl2fhAs-eLeagswMSldLdvv8iPCMmqs_CY/s704/image14.png"><br>
+    <span class="minor-heading player-name">7 TRISKAI 🇺🇸</span><br>
+    FM Post: 355,780
+  </div>
+  <div class="ranking-flex-item">
+    <img class="player-thumbnail" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiS6SmdPna8pPJleBkDLnVu_DggEXhvKbuAX9RYFfAzcrZtL1EDvtlHoX8kKNKj8oTRWsm8LRhWAyNOTuyg9kbbMJWAVYXmUfFsKZrHHKAZJIUYTv0cnDvgpy9LG4m-WUGJMZvyoG3pUMOPrFYhgfs5bN4Ttu90w9q4haay-VxYUVdOFXN8aRkS2mhXj6Q/s320/image6.png"><br>
+    <span class="minor-heading player-name">8 NENU 🇮🇩</span><br>
+    FM Post: 347,840
+  </div>
+  <div class="ranking-flex-item">
+    <img class="player-thumbnail" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjJuW9GVZgw7O10_IAKqsBDQpsq5mVSwZEfsKZBEdml5Cna-BjXBNFRyYZuKzMcxdwkiUr_aY1SkCMLI-5W61urI5I8bpjZxE5cdKcBfW8fYa1WDzdKOIH8p_LZBfzpsf_IoiEFBSk3CYUWwavPmzflj8P9cvTyL0ZgTdqaXayZartu34MM2bECzZ9MlwY/s1999/image19.jpg"><br>
+    <span class="minor-heading player-name">9 AVGEEK 🇺🇸</span><br>
+    FM Post: 336,760
+  </div>
+  <div class="ranking-flex-item">
+    <img class="player-thumbnail" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhN1ggPiBRq5omvpktD6UkFO2Dw1It2ibFZWIzdtI25G3nBUcWHw8SecFFxTOgSL2gJjD2Ngzg9rMLGMpvqnrVy-jvUzZqZI2BUWH0NQtUgvVwQJL524cpYnI508GfsMPwqeqpujL68kOOIegqdJmLKL40S_2pZoxojZlFaF7yXkKdJZvp6BfGXUj_RtvY/s1999/image13.jpg"><br>
+    <span class="minor-heading player-name">10 NGC MAN 🇺🇸</span><br>
+    FM Post: 325,460
+  </div>
+</div>
+<div class="note">
+  <a href="#photo-credits">
+    Photo Credits
+  </a>
+</div>
+
+<p>The champion in this category is PixelAndy, who has been the undisputed DAS champion for the past three months. He is closely followed by Fractal, then Gio, TommyNTG and Sharky, although the gap between Sharky and Andy's FM post score is already 80k, much larger than that between (for example) Sharky and AvGeek, who are also 4 places apart but with just a 20k difference. It goes to show in 19 play, Andy and Fractal have a decent lead over the rest of the field, perhaps playing a big part in their competitive success thus far.</p>
+
+<h2>How Far We've Come</h2>
+
+<p>So there we have it -- the best of 2024! It's time to answer the question we began this project with: being the original, "developer-intended" playstyle, DAS has evolved enormously in all the forty years that NES Tetris has existed. Just as Jonas and Harry pushed the boundaries of the game before tapping came along, an ever-growing group of players are showing us what DAS can do in 2024. Now the question is, how much better have we really gotten at competition? Part of this was perhaps already answered at the Jonas Cup, where we got to see old-school veterans face off against some of the very best of the current generation. But now we have the numbers to prove it too!</p>
+
+<p>Using the four benchmarks above, let's compare the field that is 2024 DAS to the pre-tapping era. My pool of matches for the pre-tapping era comes from all DAS vs DAS CTWC matches logged in the database before 2020: there is a slight bias towards stronger performances as virtually all early rounds were lost before 2015, so perhaps take these numbers with a tiny pinch of salt. Another note is that DAS players' matches versus tappers were not counted for statistical purposes, so Greentea's historic double maxout match against Joseph, for example, was not among the games considered.</p>
+
+<p>With that, here are the numbers:
+  <table>
+    <tr>
+      <td>Criteria</td>
+      <td>Jonas era (~2010-2018)</td>
+      <td>2024</td>
+    </tr>
+    <tr>
+      <td>Fair Median Score</td>
+      <td>486,201</td>
+      <td>672,780 <span class="up-green">(+187k)</span></td>
+    </tr>
+    <tr>
+      <td>Median 19 Transition</td>
+      <td>433,694</td>
+      <td>520,660 <span class="up-green">(+87k)</span></td>
+    </tr>
+    <tr>
+      <td>Fair 19 Transition Rate</td>
+      <td>79.59%</td>
+      <td>78.19% <span class="down-red">(-0.7%)</span></td>
+    </tr>
+    <tr>
+      <td>All-Time High Score</td>
+      <td>933,420<br>
+        (BEN MULLEN: Top 16 match vs. JANI, CTWC 2017)
+      </td>
+      <td>
+        1,245,550<br>
+        (PIXELANDY: League Phase Match vs. MARI, DCL S1)
+      </td>
+    </tr>
+  </table>
+</p>
+
+<p>We can see that scoring potential has gone up enormously in 2024, by about 3-4 tetrises on 18 and a much larger margin on 19. (It's not just new players lifting these scores up -- veterans like Alex Kerr have scored much higher in competition compared to the past in 2024!). The fair 19 transition rate is slightly lower, but taking into account the biases mentioned in the previous paragraph, I think it's safe to say that they're somewhat comparable, or even the modern age having an edge.</p>
+
+<p>And to tie things up, a couple more blurbs:</p>
+
+<h3>The Hidden DAS Goat</h3>
+<p>The biggest find of this stats project, as Beepomonk inhabitants will now know, is TommyNTG. For a regular viewer who's maybe only paid attention to DAS Masters and not watched the huge body of matches that is DAS Champions League, Tommy might fall under the radar (evidenced by his relatively low placement in the Premiere Poll), but the playoffs might have convinced more people that he's actually a top 10 DAS player. He's ranked 3rd in the average placement rankings, ahead of players such as Dog, Nenu and Gio. I'll continue to spread the good word for him, but hopefully he'll get recognized in the next poll and in the competitions to come next year!</p>
+
+<h3>Counting Maxes</h3>
+<p>Maxouts were the gold standard of a great player back in the day, and to this day CTWC is still seeded by the number of maxouts a player can get within a qualifying session. However, the remarkable thing is that no DAS vs DAS matches before 2020 featured a single maxout, whereas in 2024 191 maxouts were scored by players in such matches. I thought it would be fun to make a maxout leaderboard, which you can see on the landing page. Unsurprisingly, PixelAndy leads the pack with 34 maxouts (a whopping 17.8%, over one-sixth of these games!) in 138 games played. Fractal and Dog are in second and third place with 14 and 13 maxes respectively.</p>
+
+<h3>Winning Games, Taking Names</h3>
+<p>Speaking of games played, it's probably no surprise that PixelAndy, having won three out of four DAS Masters held and made deep tournament runs in most DAS competitions this year, has the most (recorded) games played at 138. He also has the highest winning percentage, at 76.81%- by comparison, Fractal's win rate is down at 62.50%. Only one other player, brodindamp, has a comparable win rate at 70%, going to show how crazy Andy's dominance has been over the last six months. Weighing the four categories above and taking the average, he also ranks first in average placement, an idea (by <a href="http://twitch.tv/thedengler_">Dengler</a>) that I stole from the <a href="https://docs.google.com/spreadsheets/u/1/d/1ZBxkZEsfwDsUpyire4Xb16er36Covk7nhR8BN_LPodI/edit">NES Tetris Leaderboards</a>.
+</p>
+
+<h3>My Highlights of the 2024 Season</h3>
+<p>Since TWiT doesn't cover DAS matches (we want to, but are quite short of writers: join <a href="https://discord.gg/GkbKzfGP">the Discord</a> if you want to contribute so we can branch out!), here's an overview of some crazy matches that have happened in the last couple of months:</p>
+<ul>
+  <li>
+    <a href="https://youtu.be/UnlvMEtiARU?t=1994">CTM DAS Masters July, Round 1/2 - Fractal's B3B/A6A maxouts</a><br>
+    In his sets versus Micetro and Myles, Fractal has back-three-back maxouts in each set to sweep his opponents, shocking the world with what DAS can do.
+  </li>
+  <li>
+    <a href="https://youtu.be/2pVr0BjX6_Y?t=1110">CTM DAS Masters July Semis - Andy gets level 32!</a><br>
+    As captioned. Simply insane.
+  </li>
+  <li>
+    <a href="https://youtu.be/qgF-9P5HiQ8?t=3760">CTM DAS Masters August Top 16 - Tristop vs Night</a><br>
+    Crazy paces, no early topouts and a stellar performance from both.
+  </li>
+  <li>
+    <a href="https://youtu.be/ktmL-PqMAgo?t=1218">CTM DAS Masters September Top 16 - Dog vs Andy</a><br>
+    No more choking to Dog in this one, as even an incredibly strong performance from Dog couldn't stop Andy from taking the match.
+  </li>
+  <li>
+    <a href="https://youtu.be/lpwWbNYNGhM?t=1374">CTM DAS Masters October Top 32 - Meme vs Storm957</a><br>
+    A newcomer to the competitive scene, Storm's DAS Masters debut was an impressive set in which he swept Meme with a maxout and a 980k. There's not enough data to add him to the rankings yet, but he's definitely one to watch in the new year.
+  </li>
+  <li>
+    <a href="https://youtu.be/Ztm7BfQOi0s?t=12490">CTWC DAS Winners Finals - Gio vs Robin</a><br>
+    In his sets versus Micetro and Myles, Fractal has back-three-back maxouts in each set to sweep his opponents, shocking the world with what DAS can do.
+  </li>
+  <li>
+    <a href="https://youtu.be/29TXR-AkEw4?t=3">Jonas Cup Top 16 - Fractal vs Night</a><br>
+    A nailbiting match that went to a decider…and famously with some controversy in the final game!
+  </li>
+  <li>
+    <a href="https://youtu.be/0eTAcrcJVs8?t=9">Jonas Cup Top 8 - Fractal vs Dog, Andy vs AvGeek</a><br>
+    Combined as they share the same VOD link: a great showing for all the players listed here.
+  </li>
+  <li>
+    <a href="https://www.twitch.tv/videos/2255587296?filter=all&sort=time">DAS Champions League Season 1 - Andy vs Mari</a><br>
+    Andy sets the highest ever competition score in this set: he scored a whopping 1.245 million in game 2.
+  </li>
+  <li>
+    <a href="https://www.twitch.tv/videos/2302927940">DAS Champions League Season 1 - Nenu vs TommyNTG</a><br>
+    Another extremely close match with no early topouts (the earliest was Nenu's level 22 in game 2).
+  </li>
+  <li>
+    <a href="https://www.twitch.tv/videos/2321894626">DAS Champions League Season 1 playoffs - Top 8 - Sharky vs TegaMech</a><br>
+    TegaMech is another player who's gotten much better in the last few months, but due to lost DCL VODs it hasn't been reflected in the statistics much. This set, where he holds Sharky to a decider, is where he truly shines (with surviving video, as many of his DCL matches, while great, had expired VODs by the time I had gotten around to check them).
+  </li>
+  <li>
+    <a href="https://www.twitch.tv/videos/2326040923">DAS Champions League Season 1 playoffs - Semis - Tommy vs Andy</a><br>
+    A much closer set than the final scoreline (4-1 to Andy) indicates. I'm pretty biased as I love watching both Tommy and Andy, but this was one of my favorite matches to watch this year.
+  </li>
+</ul>
+
+<p>Here's to more DAS excitement in 2025, and a very happy new year to you all! It's pretty obvious we haven't reached our ceiling with DAS yet, and I certainly cannot wait to see more.</p>
+
+<h2 id="photo-credits">Photo Credits</h2>
+<b>AVGEEK:</b> aGameScout (Jonas Cup 2024)
+<br>
+<b>BENDY1:</b> aGameScout (CTWC 2024)
+<br>
+<b>BLUE SCUTI:</b> aGameScout (CTWC 2024)
+<br>
+<b>DAVIDMJ:</b> aGameScout (CTWC 2024)
+<br>
+<b>DOG:</b> aGameScout (CTWC 2024)
+<br>
+<b>ELIAS:</b> screenshot (CTM)
+<br>
+<b>FRACTAL:</b> aGameScout (CTWC 2024)
+<br>
+<b>GIOVANNI:</b> Yelena (CTWC DAS 2024)
+<br>
+<b>IANKEITH:</b> screenshot
+<br>
+<b>JDH:</b> screenshot
+<br>
+<b>LIOLIO:</b> screenshot (CTM)
+<br>
+<b>NENU:</b> screenshot (CTM)
+<br>
+<b>NGC MAN:</b> aGameScout (Jonas Cup 2024)
+<br>
+<b>PEEKAYRIC:</b> screenshot (CTL)
+<br>
+<b>PIXELANDY:</b> aGameScout (CTWC 2024)
+<br>
+<b>POOPYOLDHAG:</b> Twitch profile picture
+<br>
+<b>ROBIN:</b> Yelena (CTWC DAS 2024)
+<br>
+<b>SHARKY:</b> aGameScout (CTWC 2024)
+<br>
+<b>SIDNEV:</b> aGameScout (CTWC 2024)
+<br>
+<b>TOMMYNTG:</b> CTM Masters stats sheet
+<br>
+<b>TRISKAI:</b> screenshot (Jonas Cup 2024)
+<br>
+<b>TRISTOP:</b> aGameScout (CTWC 2024)
+<br>
+
+<!--
+avgeek: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjJuW9GVZgw7O10_IAKqsBDQpsq5mVSwZEfsKZBEdml5Cna-BjXBNFRyYZuKzMcxdwkiUr_aY1SkCMLI-5W61urI5I8bpjZxE5cdKcBfW8fYa1WDzdKOIH8p_LZBfzpsf_IoiEFBSk3CYUWwavPmzflj8P9cvTyL0ZgTdqaXayZartu34MM2bECzZ9MlwY/s1999/image19.jpg"
+
+bendy1: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgyuS-vUjv6xLRp6uwcg-wIiWXH105FWHOZNZ2QCleCyBHzeh2DwZUs4mk7EUQOSqy_gAO0E5sW9X7WISGHLwzQ4auswxmuL2yggPNjTrlx7LV8wU7m0SrrRXLaegagz-bClMiQYQwA_C7wiPCdWAb2iSBg-dJg3hYHslmsN6xvjahtTEs0u77fpDRDVbs/s1919/image15.jpg"
+
+blue scuti: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjFfrLiXJL_Tos26QwDS_X-1_p47L3bdbvu6yA6DJZp4JZqfusodKDlLDkADIfn-3yOGgrdG42GiBPEgMH10Rus8PdZrV_i6A0_j5e2abaIfUnCILhjazAKBrUuEJDqTJPQZuXR20A8xrrsytNvyIcQkNIlZfYBqevyHO8HCwbhdQyPp7TjrqcXMbjzWFM/s1999/image18.jpg"
+
+davidmj: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhpwz_FmbZUdv84UeIoEmXweKpuZor3dM2zE6-wg-pLweW7wYXrHpEX9F6fCqSkfBm8hgqVH7Hde9lmDkPfk7vYzJKlp2zviAwvTtT6JB9_pWJoM86D242olP4ua_y6Icq-RJF-cdy34pHInndQSvcynVsqUh43E16MtQU7sD78uk0YnFOZtaZhhHEONLQ/s1999/image22.jpg"
+
+dog: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjUZVyp4PiV3m6964b8GMEsNAB3LRCA4kQOuCBasQtITbpNvKxJEBQxAcDn89CQQSLYBcLt8VVcPAeKuS7E-IDBaoTzR_nyuY1mpaxSEpgvyGhIIN6ZfOuQyVfk-Y3HTSbvOchzIcHIAGQ9G-r9fynNyO63nv0v-_3llGzAyeE5cxaLiCsOjNRNZskczgM/s1999/image17.jpg"
+
+elias: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg_4Yi4SRulUJR39K0oGjn1E-QMW1I5S3h6KkR4v_n2Gls8pI73L-LzelRCYFdvaavgdvLrJrYdA8FTszJCoMD0QvAvilatf23sVPxEbLqcElmXK6JPOqixS6dJSpxVvIoN0tlRYV9KVjVIKcTbQRon6-LaFrMxwPz5eISbLwxrxQlIJFHeaxGS2kK0uKc/s549/image9.png"
+
+fractal: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiAW9Kvw1Td8Kq7AmZ6KmzKguAdPu2UQV0i2yaH8mwgaCX6JDUsMm4W27S84Lp3EKOZ3FmcE6-6CgZ0y4xi21UpHm1G4h2Lk0FOqh5ngm5a6gN6iE3wHopLAuH9pyFGuRL7wz8ee_QyiPhDBm6LTm67W0aQ8pPRCw9M5Y_hU5tSl8qMu9-3lkNYbOio8ng/s1999/image12.jpg"
+
+giovanni: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjiES4pz9Gbl4LBvsFhf86ldCZbxvDjLUCm05oWB4CWWwSCIDEY6BEVSI40F-UlJQGUkBmYhH50QNjsAQImJFOzQiKlcARZwgGPPX1KphebPZq1cVkqMtdI3Wiksdo58jjeEhcEMVuF2zRoVmOzhRSAgfWQoJeKIzCaa9Q5DxBy_HnMXXwB8l80Q6tW4MQ/s1999/image10.jpg"
+
+iankeith: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj1LsD7rq1gncZIY0Kacp60RKVD5UJYjgLn_6j3LZggGaEfHhHYjd0fNaLDCnAFvUvYMsgQ2jU3aWOtSMXt-ubwd5bG32ng4OwRkZCG-qxS8JG0DEzpZWEy7GYIApR2YcLmz_R0Uo8QJYtK8Ndl7VXzRUFZBhO8narAf3tn1NSpW7SSTPHm8JwsFYnJycc/s1009/image16.png"
+
+jdh: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj0dIbvMfDM0cQQaqAQMSjAsJPzx7NmrgI69dumsxBBIh6196epNFLOUv3KH3vwybi3R9P3tl9sYLpZcQmOPCmSv4rfwI1aE8bNd3DOm7pTMY0r3US1J2hHLpV_9bZuwdG1djGDtNGjELQrqaI4E2BXMUG6RjKLqkBeMRmEceyBy0tAwdGUhL9dUZnXG8A/s426/image21.png"
+
+liolio: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiQVXadM-nmDp_jB79LivpnsgrRxzsdZRW0mq5cwNf2MeSbr3wSRPZu7DYmKUNphU1Ya7WIyb873tXpUXr7v7etSiRIgOnYpyWj0HNOWAIlFPlDiL5Ihex3FsNZ22_7IZPPj7E6ONcINyHFMOXrbNe-Q1w1rSHLAGcoWwpIuuI2oGPzTkXSctQukU-wQrg/s492/image20.png"
+
+nenu: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiS6SmdPna8pPJleBkDLnVu_DggEXhvKbuAX9RYFfAzcrZtL1EDvtlHoX8kKNKj8oTRWsm8LRhWAyNOTuyg9kbbMJWAVYXmUfFsKZrHHKAZJIUYTv0cnDvgpy9LG4m-WUGJMZvyoG3pUMOPrFYhgfs5bN4Ttu90w9q4haay-VxYUVdOFXN8aRkS2mhXj6Q/s320/image6.png"
+
+ngc man: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhN1ggPiBRq5omvpktD6UkFO2Dw1It2ibFZWIzdtI25G3nBUcWHw8SecFFxTOgSL2gJjD2Ngzg9rMLGMpvqnrVy-jvUzZqZI2BUWH0NQtUgvVwQJL524cpYnI508GfsMPwqeqpujL68kOOIegqdJmLKL40S_2pZoxojZlFaF7yXkKdJZvp6BfGXUj_RtvY/s1999/image13.jpg"
+
+peekayric: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhDbKIp_ntG0_J7MFyHNwiJGsmGESgdbPYddi0jzg4bWDhmgN_XuX_DZt0tkmfZYeivOpAO27B6S6mRQp_y9SVzDSWisFzmyaS53_Q_gn2E4u1BHel5YAaqnI_CJ3mLKOgqIB2K7WS06BR8cDH7leNYTOngAT_oWHkY9KP3MbwEIuXb8O-6-ToFOLum5UY/s320/image3.png"
+
+pixelandy: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjFQiEEMf5iEmgWbNgJjzEcctLsY2CjOvRF6kt2lb_OT0JjZI1yTe1VcqSCjso3QXEa6pSj5Kbuaa7W-wEW43hITCr3tTiiGgpfxzlCXIyNWoWvQ5_0g6LLlRryC_xQ0yEg2F-5FA0YODlRdxGAqpJ7Lp64mDWy83wOQ85vpp6yrcdlo8RyDNmkZ-YYyow/s1999/image7.jpg"
+
+poopyoldhag: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhOAFQlQsjUhUlytQberXkLnme03j93dAV6DE1ucVytIc-h_ZFV5XfGTlb2LZQ4ywo8S-6MuZkKFt_JUSUkeM8JTwQEqf8u0oBGNrh4bIx6IU6dyRaLtUBBVGmcINpZCsERcSULFtZZa8i2GNwalhYaOquzEZX_OikhuLof4MX97SEhIjqtNgdPUcneTTI/s287/image5.png"
+
+robin: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhsOtN-g4yE1zpOaMbhY12mpOUhYjp3TPhSPuKWh7S2iMVzRziRfA5CIGSBV78RaayM5M3nyNC7IC_CJdAY4UgSsJos9ScUz2fkMZmbT5ka9L0hNGJIZmnt6aVQopTdQHvGDnbuqHibjLkTay8mJgEbyI0tSnEFni_u0UJhSsY1CR7W4J-QQ-Frk05STWc/s1999/image11.jpg"
+
+sharky: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh4bIoD2Lztn9LSAFKzRXkU1lX7IKHPLYSmCNlOk9EWX_tmbF_POCLoN0rQX-WzA-qPE4hVzkk6EU8keTs8fNDo6vGuCxe2BaQ69eh-a8cJDkWvH4Bs35SUGTJebF72wqXvTWytAuk9a2wh07lFptlqhA3x7KTagOc1O6zOXu9sgqiWofudQFWmcWbAVGo/s320/image2.jpg"
+
+sidnev: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEixTYRwlX7ynvbGtumu-kUlfEYxZbDhCLTSGPl6emBkbdEktLnDa8FWu2wAXpiYm9VykaZJnRyK-jejUPwbDuuhYn8pQ83DYyqFcNiw03AvI_dKZh6GWYMDlI0p3Oir8LBG34Y07MjObbNocDuL-s1uRkmsL4BaA0BNE-oWk4lcEmfySq3zgpGKgEvNfNs/s1999/image1.jpg"
+
+tommyntg: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjrmpnPCVqLS5lk4BRxfTbaVey0AvHbI85fItrzNZN5C7TNo5nl3YUmdAMtfRW7M9eVT45AJkK_s-hhnefcPVKM6liP2lwFdwaHjklCxjbkn3S1HP_bGXvBh4uQjMZyE3WyPNC176wQDxjwgXn1AbzxK8z_onatIGWMAtvj1Q-A6v3Ys0Z5V-OtaVJh2QA/s282/image8.png"
+
+triskai: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiDwAAExLttNg6s5-lXBbm2dK54N2mLx3RbaVifmcrjsX_ieaw7tOT7i0FJXc5EPdb7wPpj1TLKpYKj-MOM7BEjSxpNcNbH0i70VVRwD3anAKdWP0WOicVANuSYI3w5Jq5CTtnEhRXglQQUqBymzsW2B0jYKvl2fhAs-eLeagswMSldLdvv8iPCMmqs_CY/s704/image14.png"
+
+tristop: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi1vXMXid76Wi-KawMw0cz_KrZoF8CToFh9bHRfgXt3bOwXlfNUqGS2mS0FxzCqzY6CkWnC-djvj6p_0vAyjNBAlKqp27DiDfAwp1zKBt6XcVIoQ-EU4ZnhT6pOu9s4Y-TZYH4VPGw9IQhWpwO8pBqwm8NmpS4KS7nxMRuLxHAMYk_TlIP6LBiYtOgGKA8/s1999/image4.jpg"
+
+
+-->
+
 
 <style> 
 .post-title {
@@ -5,8 +483,17 @@
 }
 h1, h2, h3 {
   color: #66f;
-  font-family: Helvetica, Arial, Helvetica, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
   text-transform: uppercase;
+}
+.intro-italic {
+  font-style: italic;
+}
+.minor-heading {
+  color: #66f;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 18px;
 }
 .table {
     display: block;
@@ -56,6 +543,15 @@ td {
   white-space: nowrap;
   }
 
+.up-green {
+  font-weight: bold;
+  color: #1E8449;
+}
+.down-red {
+  font-weight: bold;
+  color: #900c3F;
+
+}
 .win {
   font-weight: bold;
 }
@@ -101,5 +597,27 @@ h2 {
 
 .notepipe {
   font-style: normal;
+}
+
+img.player-thumbnail {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.ranking-flex-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.ranking-flex-item {
+  line-height: normal;
+}
+
+.player-name-container {
+  display: flex;
+  justify-content: space-between;
 }
 </style><p><br /></p>
